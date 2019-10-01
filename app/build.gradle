@@ -20,6 +20,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -33,6 +36,9 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation 'com.google.android.exoplayer:exoplayer:2.10.5'
+    implementation 'com.google.android.exoplayer:exoplayer-core:r2.10.5'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:r2.10.5'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:r2.10.5'
     // RxJava 2
     implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
 
